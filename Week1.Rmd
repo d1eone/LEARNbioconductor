@@ -1,0 +1,42 @@
+---
+title: "Bioconductor Learning Notebook - Checking Install and Upgrades"
+output: html_notebook
+---
+
+## 1st Time INSTALL
+```{r}
+source("http://bioconductor.org/biocLite.R")
+```
+
+Install of baseline set of Bioconductor packages
+* 1st time will download all basic packages
+* Subseqently will update or download add/core packages
+```{r}
+biocLite()
+```
+
+## Check to see if up-to-date or if we need to download new packages
+```{r}
+biocValid()
+```
+## Install additional packages
+*EXAMPLE install limma package
+```{r}
+biocLite("limma")
+```
+
+## Bioconductor Website
+* http://bioconductor.org
+* biocViews == "keywords" for searching out packages
+* vignettes == "how-to-use" in a case-based approach
+* NEWS == "changes" from version-2-version
+* common workflows == how-2 use packages together
+
+### Online Help
+##  Forums
+* Posting-guide == how to get most out of forums
+
+## Alternative Sites
+* StackOverFlow
+* rdocumentation.org
+* rseek.org 
